@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    
+<struts>
+    <package name="default"   extends="struts-default">
+        <action name="searchBookByName" class="lib_1.bookAction" method="searchBookByName">
+            <result name="success">SearchSuccess.jsp</result>
+            <result name="error">Error.jsp</result>
+        </action>
+        <action name="moreInfo" class="lib_1.moreInfo" method="moreInfo">
+            <result name="success">moreInfo.jsp</result>
+            <result name="error">Error.jsp</result>
+        </action>
+         <action name="delete" class="lib_1.delete" method="delete">
+            <result name="success">deleteSuccess.jsp</result>
+            <result name="error">Error.jsp</result>
+        </action>
+    </package>
+</struts>
